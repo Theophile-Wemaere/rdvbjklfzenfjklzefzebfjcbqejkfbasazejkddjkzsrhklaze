@@ -98,3 +98,9 @@ body {
 .wrapper select {
   width: 600px;
 }
+
+.choicebox {
+  width: 600px;
+  display: flex;
+  flex-direction: row;
+}
