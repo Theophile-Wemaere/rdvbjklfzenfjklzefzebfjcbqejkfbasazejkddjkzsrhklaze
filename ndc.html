@@ -12,13 +12,12 @@
     <style>
       .content img {
         border: solid 5px #c4690e;
-        width: 500px;
+        width: 30%;
       }
 
       .text-pres {
+        width: 30%;
         border: solid 5px #c4690e;
-        height: 342px;
-        width: 500px;
         background: radial-gradient(
           ellipse at center,
           #ffffff 0%,
@@ -31,6 +30,17 @@
         margin-top: 50px;
         font-weight: bold;
         font-size: 2vw;
+      }
+
+      @media (max-width: 800px) {
+        .content > * {
+          margin-bottom: 50px;
+          width: 80%;
+        }
+
+        .content img {
+          width: 80%;
+        }
       }
     </style>
     <div class="top-bar">

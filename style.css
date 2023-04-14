@@ -41,7 +41,6 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
 }
 
 .content {
@@ -54,7 +53,7 @@ body {
 
 .content img {
   height: auto;
-  width: 400px;
+  width: 20%;
   border: solid 5px #7ea8e5;
 }
 
@@ -63,8 +62,7 @@ body {
   text-align: center;
   justify-content: center;
   align-items: center;
-  height: 208px;
-  width: 400px;
+  width: 20%;
   border: dotted 5px #7ea8e5;
 }
 
@@ -93,7 +91,7 @@ body {
   margin-right: 10px;
 }
 
-.wrapper input {
+.row input {
   width: 600px;
   height: 50px;
   border-radius: 15px;
@@ -179,9 +177,34 @@ button:hover {
 
   .content > * {
     margin-bottom: 50px;
+    width: 80%;
+  }
+
+  .content img {
+    width: 80%;
   }
 
   .row {
     flex-direction: column;
+  }
+
+  .row > * {
+    width: 80vw;
+  }
+
+  .row a {
+    text-align: center;
+  }
+
+  .row input {
+    width: 80vw;
+  }
+
+  .row select {
+    width: 80vw;
+  }
+
+  .choicebox {
+    width: 80vw;
   }
 }
