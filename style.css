@@ -72,26 +72,28 @@ body {
   margin-top: 100px;
   flex-direction: column;
   align-items: center;
-  justify-content: left;
+  justify-content: center;
 }
 
 .row {
   display: flex;
   margin: 10px;
+  width: 1400px;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
+  justify-content: left;
 }
 
 .row a {
   margin-top: 0;
   text-align: right;
-  width: 400px;
+  max-width: 400px;
+  flex-grow: 1;
   margin-right: 10px;
 }
 
 .wrapper input {
-  width: 100%;
+  width: 600px;
   height: 50px;
   border-radius: 15px;
 }
@@ -148,4 +150,17 @@ input[type="checkbox"]:checked::before {
 
 .choicebox label {
   margin-right: 15px;
+}
+
+button {
+  background-color: #cc6600;
+  color: white;
+  height: 70px;
+  width: 200px;
+  border-radius: 15px;
+}
+
+button:hover {
+  background-color: white;
+  color: #cc6600;
 }
